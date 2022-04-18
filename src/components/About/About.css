@@ -1,3 +1,11 @@
 .about{
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 320px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.about-con{
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
 }
