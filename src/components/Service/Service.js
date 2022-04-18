@@ -3,7 +3,7 @@ import './Service.css';
 const Service = ({ service }) => {
     const { img,price,discription1,discription2,discription3,discription4,time } = service;
     return (
-        <div className=''>
+        <div className='mt-4'>
             <div className="card service-border" style={{width: "18rem"}}>
                 <img src={img} className="card-img-top" alt="" />
                     <div class="card-body">
