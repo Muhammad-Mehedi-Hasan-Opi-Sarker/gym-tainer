@@ -10,6 +10,8 @@ import Blog from './components/Blog/Blog';
 import Headers from './components/Headers/Headers';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import Register from './components/Register/Register';
+import RequierAuth from './components/RequierAuth/RequierAuth';
+import CheekOut from './components/CheekOut/CheekOut';
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,9 @@ function App() {
         <Route path='service/:serviceId' element={<ServiceDetails></ServiceDetails>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/checkout' element={<RequierAuth>
+          <CheekOut></CheekOut>
+        </RequierAuth>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
