@@ -3,11 +3,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 const Login = () => {
     const navigate = useNavigate();
-    
+    const handleLogin =event=>{
+        event.preventDefault();
+        // console.log(event.target.email.value)
+    }
     return (
         <div className='login'>
             <h1 style={{color:'rgba(243, 111, 33, 0.86)'}}>Login</h1>
-            <form>
+            <form onSubmit={handleLogin}>
                 <label htmlFor="email">Email:</label>
                 <input type="email" name="email" id="" placeholder='Enter you email' required /><br />
                 <label htmlFor="password">Password:</label>
