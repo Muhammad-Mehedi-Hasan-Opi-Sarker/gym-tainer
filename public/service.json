@@ -1,0 +1,29 @@
+[
+    {"id":1,
+        "img":"https://i.ibb.co/p47jbn7/tainer1.jpg",
+        "discription1":"Gym Fitness",
+        "discription2":"Yoga",
+        "discription3":"Running",
+        "discription4":"Body Building",
+        "time":"1 Month for hire",
+        "price":899
+    },
+    {"id":2,
+        "img":"https://i.ibb.co/cY0jg8t/tainer2.jpg",
+        "discription1":"Gym Fitness",
+        "discription2":"Yoga",
+        "discription3":"Running",
+        "discription4":"Body Building",
+        "time":"2 Month for hire",
+        "price":1599
+    },
+    {"id":2,
+        "img":"https://i.ibb.co/4jsTWCw/tainer3.jpg",
+        "discription1":"Gym Fitness",
+        "discription2":"Yoga",
+        "discription3":"Running",
+        "discription4":"Body Building",
+        "time":"6 Month for hire",
+        "price":3500
+    }
+]
