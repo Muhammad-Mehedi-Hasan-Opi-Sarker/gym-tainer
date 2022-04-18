@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import Service from '../Service/Service';
 import './Services.css'
@@ -10,7 +11,9 @@ const Services = () => {
         .then(data=>setServices(data))
     },[])
     return (
-        <div className='container'>
+        <div>
+            <Banner></Banner>
+            <div className="container">
             <h1>My Services</h1>
             <div className='services'>
             {
@@ -20,7 +23,8 @@ const Services = () => {
                 ></Service>)
             }
             </div>
-            <Footer></Footer>
+            </div>
+            
         </div>
         
     );
