@@ -2,3 +2,10 @@
     margin-top: 70px;
     margin-bottom: 400px;
 }
+.hire{
+    color: rgba(243, 111, 33, 0.86);
+}
+.details button{
+    color: azure;
+    background-color: rgba(243, 111, 33, 0.86);
+}

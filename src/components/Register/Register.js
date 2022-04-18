@@ -2,6 +2,7 @@ import React from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Social from '../Social/Social';
 import './Register.css';
 const Register = () => {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
     const handleRegister=event=>{
         event.preventDefault();
         const email =event.target.email.value;
@@ -33,6 +34,7 @@ const Register = () => {
                 <p>Already have account <small><Link className='text-decoration-none' to={'/login'} >Login</Link></small></p>
                 <input style={{backgroundColor:'rgba(243, 111, 33, 0.86)'}} className='btn' type="submit" value="submit" />
             </form>
+            <Social></Social>
         </div>
     );
 };

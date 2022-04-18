@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './CheekOut.css';
 const CheekOut = () => {
     return (
-        <div>
-            <h1>Confirm , you get hire me.</h1>
+        <div className='cheek'>
+            <h1 className='text-primary'>Confirm , you hire me.</h1>
         </div>
     );
 };
