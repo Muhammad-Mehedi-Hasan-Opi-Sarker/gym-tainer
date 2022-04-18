@@ -9,6 +9,7 @@ import Login from './components/Login/Login';
 import Blog from './components/Blog/Blog';
 import Headers from './components/Headers/Headers';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
+import Register from './components/Register/Register';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='service/:serviceId' element={<ServiceDetails></ServiceDetails>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
