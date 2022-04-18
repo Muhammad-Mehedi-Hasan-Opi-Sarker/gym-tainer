@@ -20,7 +20,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-75"
+                        className="d-block w-100"
                         src={tainer2}
                         alt="Second slide"
                     />
